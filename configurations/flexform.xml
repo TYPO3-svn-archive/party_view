@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<T3DataStructure>
+ <meta>
+  <langDisable>1</langDisable>
+ </meta>
+ <sheets>
+  <mainSheet>
+   <ROOT>
+	<TCEforms>
+	 <sheetTitle>LLL:EXT:lang/locallang_general.xml:LGL.startingpoint</sheetTitle>
+	</TCEforms>
+	<type>array</type>
+	<el>
+		<controller>
+			<TCEforms>
+				<label>LLL:EXT:party_view/locallang_db.xml:flexform.controllerSelection</label>
+				<config>
+					<type>select</type>
+					<items type="array">
+ 						<numIndex index="5" type="array">
+							<numIndex index="0">LLL:EXT:party_view/locallang_db.xml:flexform.controllerSelection.showPersonList</numIndex>
+							<numIndex index="1">showPersonList</numIndex>
+						</numIndex>
+ 						<numIndex index="10" type="array">
+							<numIndex index="0">LLL:EXT:party_view/locallang_db.xml:flexform.controllerSelection.showPerson</numIndex>
+							<numIndex index="1">showPerson</numIndex>
+						</numIndex>
+					</items>
+ 				</config>
+			</TCEforms>
+		</controller>
+		<storageFolder>
+			<TCEforms>
+				<label>LLL:EXT:party_view/locallang_db.xml:flexform.storageFolderSelection</label>
+				<config>
+					<type>group</type>
+					<internal_type>db</internal_type>
+					<allowed>pages</allowed>
+					<size>1</size>
+					<maxitems>1</maxitems>
+					<minitems>1</minitems>
+					<show_thumbs>1</show_thumbs>
+				</config>
+			</TCEforms>
+		</storageFolder>
+	</el>
+   </ROOT>
+  </mainSheet>
+ </sheets>
+</T3DataStructure>

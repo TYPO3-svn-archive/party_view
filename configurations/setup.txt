@@ -1,0 +1,33 @@
+
+# Common configuration
+plugin.tx_partyview.configurations {
+	templatePath = EXT:party_view/templates/
+	pathToLanguageFile = EXT:party_view/locallang.xml
+	showPersonListTemplate = showPersonList
+	showPersonTemplate = showPerson
+
+}
+
+includeLibs.tx_div = EXT:div/class.tx_div.php
+includeLibs.tx_lib_switch = EXT:lib/class.tx_lib_switch.php
+# includeLibs.tx_party_models_parties = EXT:party/controllers/class.tx_party_models_parties.php
+includeLibs.tx_partyview_controller_showPerson = EXT:party_view/controllers/class.tx_partyview_controllers_showPerson.php
+includeLibs.tx_partyview_controller_showPersonList = EXT:party_view/controllers/class.tx_partyview_controllers_showPersonList.php
+
+# The controller switch
+plugin.tx_partyview.controllerSwitch = USER
+plugin.tx_partyview.controllerSwitch {
+	userFunc = tx_lib_switch->main
+
+	showPerson = USER_INT
+	showPerson {
+	   userFunc = tx_partyview_controllers_showPerson->main
+	   setupPath = plugin.tx_partyview.configurations.
+	}
+	showPersonList = USER_INT
+	showPersonList {
+	   userFunc = tx_partyview_controllers_showPersonList->main
+	   setupPath = plugin.tx_partyview.configurations.
+	}
+}
+tt_content.list.20.party_view =< plugin.tx_partyview.controllerSwitch

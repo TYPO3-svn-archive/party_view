@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'party_view'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">Party View</label>
+			<label index="flexform.controllerSelection">Sub plugin</label>
+			<label index="flexform.controllerSelection.showPersonList">List-View</label>
+			<label index="flexform.controllerSelection.showPerson">Single-View</label>
+			<label index="flexform.storageFolderSelection">Party storage folder</label>
+		</languageKey>
+	</data>
+</T3locallang>
